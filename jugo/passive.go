@@ -1,4 +1,4 @@
-package main
+package jugo
 
 import "fmt"
 

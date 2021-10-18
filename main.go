@@ -7,6 +7,7 @@ package main
 
 import (
 	"fmt"
+	"jugo/jugo"
 	"log"
 	"os"
 	"path/filepath"
@@ -43,5 +44,9 @@ func main() {
 	if err := app.Run(os.Args); err != nil {
 		log.Fatal(err)
 	}
+
+	// Passive Collection @jugo/passsive.go
+
+	jugo.Passive()
 
 }
