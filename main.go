@@ -47,6 +47,6 @@ func main() {
 
 	// Passive Collection @jugo/passsive.go
 
-	jugo.Passive()
+	jugo.Passive("www.baidu.com")
 
 }
