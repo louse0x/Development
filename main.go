@@ -11,8 +11,13 @@ import (
 	"log"
 	"os"
 	"path/filepath"
+	"sync"
 
 	"github.com/urfave/cli/v2"
+)
+
+var (
+	wg sync.WaitGroup
 )
 
 func init() {
