@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"jugo/jugo"
 	"log"
 	"os"
 	"path/filepath"
@@ -78,6 +79,9 @@ func main() {
 
 	// Passive Collection @jugo/passsive.go
 	//fmt.Printf("%c[1;0;31m%s%c[0m %-30s\n", 0x1b, "[x]", 0x1b, "Beian information api interface returns an exception")
-	//jugo.Passive("www.baidu.com")
+	jugo.Passive("www.baidu.com")
+	// fmt.Println("\n\n")
+	// fmt.Println(jugo.RandomHeader())
+	fmt.Println(jugo.PassiveData)
 
 }
